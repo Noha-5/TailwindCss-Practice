@@ -867,53 +867,12 @@ video {
   cursor: pointer;
 }
 
-.scroll-m-24 {
-  scroll-margin: 6rem;
-}
-
-.scroll-mt-\[2rem\] {
-  scroll-margin-top: 2rem;
-}
-
-.scroll-mt-24 {
-  scroll-margin-top: 6rem;
-}
-
-.scroll-mt-16 {
-  scroll-margin-top: 4rem;
-}
-
 .scroll-mt-12 {
   scroll-margin-top: 3rem;
 }
 
-.scroll-py-16 {
-  scroll-padding-top: 4rem;
-  scroll-padding-bottom: 4rem;
-}
-
-.scroll-pt-4 {
-  scroll-padding-top: 1rem;
-}
-
-.scroll-pt-11 {
-  scroll-padding-top: 2.75rem;
-}
-
-.scroll-pt-7 {
-  scroll-padding-top: 1.75rem;
-}
-
-.scroll-pt-12 {
-  scroll-padding-top: 3rem;
-}
-
-.scroll-pt-16 {
-  scroll-padding-top: 4rem;
-}
-
-.scroll-pt-\[2rem\] {
-  scroll-padding-top: 2rem;
+.scroll-mt-24 {
+  scroll-margin-top: 6rem;
 }
 
 .grid-cols-\[repeat\(autofit\2c min\(300px\2c 1fr\)\)\] {
