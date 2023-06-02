@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .toggle div:first-child {
+    @apply rotate-45 translate-y-1.5;
+  }
+  .toggle div:nth-child(2) {
+    @apply hidden;
+  }
+  .toggle div:last-child {
+    @apply -rotate-45 -translate-y-1;
+  }
+}
+
+@layer utilities {
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+
+  .transparent-text {
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+  }
+}

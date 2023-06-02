@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT -->
+    <link rel="stylesheet" href="css/style-min.css">
+    <title>Tailwind CSS</title>
+</head>
+<body>
+    <!-- SECTION 1 -->
+    <header class="bg-[url('../images/hero.png')] bg-no-repeat bg-cover min-h-[100vh] relative text-center grid place-content-center place-items-center overflow-hidden px-[10%]">
+        <!-- Menu -->
+        <nav class="bg-[rgba(255,255,255,0.8)] shadow-lg rounded-[40px] backdrop-blur-[30px] max-w-7xl w-[90%] fixed top-5 left-[50%] translate-x-[-50%] ps-10 py-4 pe-6 z-30 text-left flex flex-col md:flex-row md:justify-between items-start md:items-center gap-8 overflow-hidden">
+            <h1 class="font-bold text-md text-gray-750">Soft UI</h1>
+
+            <input type="checkbox" name="toggle" id="toggle" class="hidden peer">
+            <label for="toggle" class="block cursor-pointer absolute right-10 top-4 md:hidden peer-checked:toggle">
+                <div class="h-0.5 w-6 rounded bg-slate-500 transition duration-300"></div>
+                <div class="mt-2 h-0.5 w-6 rounded bg-slate-500 transition duration-300"></div>
+                <div class="mt-2 h-0.5 w-6 rounded bg-slate-500 transition duration-300"></div>
+            </label>
+            
+            <!-- Negative vertical margin here completely hides below element while only max-height of 0 still shows the top link -->
+            <div class="w-full md:w-[65%] -my-4 max-h-0 peer-checked:max-h-[750px] transition-all duration-500 items-center justify-between  md:flex">
+                <section class="text-gray-750 flex flex-col md:flex-row gap-2 md:gap-6 pt-5 md:pt-0">
+                    <a href="#team">Team</a>
+                    <a href="#brands">Brands</a>
+                    <a href="#contact">Contact</a>
+                </section>
+                <button class="uppercase text-sm font-bold text-white bg-gradient-to-r from-[#ff0080] to-[#7928ca] rounded-full px-6 py-1 shadow-md mt-6 md:mt-0 mb-3 md:mb-0" title="Free Download">Free Download</button>
+            </div>
+        </nav>
+        
+        <!-- Hero -->
+        <h2 class="max-w-2xl text-white text-5xl font-semibold mb-5">Work with an amazing design</h2>
+        <h3 class="max-w-3xl text-white text-xl">We're constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game</h3>
+        <button class="bg-white rounded-lg font-bold uppercase text-xs mt-7 px-6 py-3 z-20">Create Account</button>
+
+        <!-- Waves -->
+        <section class="absolute bottom-0 w-full">
+            <div class="absolute bottom-6 animate-[wave_6s_linear_infinite] bg-[url('../images/wave.png')] bg-[length:2000px_100px] w-full h-[100px] opacity-30 animation-delay-300"></div>
+            <div class="absolute bottom-4 animate-[wave_8s_linear_infinite] bg-[url('../images/wave.png')] bg-[length:2000px_100px] w-full h-[100px] opacity-60"></div>
+            <div class="absolute bottom-5 animate-[wave_11s_linear_infinite] bg-[url('../images/wave.png')] bg-[length:2000px_100px] w-full h-[100px] opacity-30"></div>
+            <div class="absolute bottom-4 animate-[wave_9s_linear_infinite] bg-[url('../images/wave.png')] bg-[length:2000px_100px] w-full h-[100px] opacity-25 animation-delay-500"></div>
+            <div class="absolute bottom-0 animate-[wave_16s_linear_infinite] bg-[url('../images/wave.png')] bg-[length:2000px_100px] w-full h-[100px]"></div>
+        </section>
+    </header>
+
+    <!-- SECTION 2 - Features -->
+    <section class="max-w-7xl flex flex-wrap justify-evenly items-center mx-auto px-[10%] md:px-0">
+
+        <!-- Features -->
+        <div class="max-w-xl grid grid-cols-[repeat(autofit,min(300px,1fr))] md:grid-cols-2 gap-y-4 gap-x-6 place-items-center place-content-center">
+            <div>
+                <img src="./images/spaceship.png" alt="spaceship"  class="block ms-4">
+                <h4 class="text-gray-750 font-semibold text-xl mt-5 mb-2">Fully integrated</h4>
+                <p class="text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, consequuntur.</p>
+            </div>
+            <div>
+                <img src="./images/creditcard.png" alt="credit card" class="block ms-4">
+                <h4 class="text-gray-750 font-semibold text-xl mt-5 mb-2">Payments functionality</h4>
+                <p class="text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, consequuntur.</p>
+            </div>
+            <div>
+                <img src="./images/block.png" alt="cube"  class="block ms-4">
+                <h4 class="text-gray-750 font-semibold text-xl mt-5 mb-2">Prebuilt components</h4>
+                <p class="text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, consequuntur.</p>
+            </div>
+            <div>
+                <img src="./images/person.png" alt="customer support"  class="block ms-4">
+                <h4 class="text-gray-750 font-semibold text-xl mt-5 mb-2">Improved platform</h4>
+                <p class="text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, consequuntur.</p>
+            </div>
+        </div>
+
+        <!-- Side Card -->
+        <div class="rounded-2xl shadow-xl max-w-sm px-4 pt-4 pb-10 my-36">
+            <img src="./images/sidecard.png" class="rounded-lg block me-0">
+            <h4 class="text-xl font-semibold text-gray-750 mt-7 mb-2">Get insights on Search</h4>
+            <p class="text-slate-500 leading-7">Website visitors today demand a frictionless user expericence — especially when using search.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 3 - Team -->
+    <section id="team" class="scroll-mt-12 relative z-20 bg-gradient-to-br from-[#3A416F] to-[#141727]">
+        <img class="w-full" src="./images/wave-top.png">
+        
+        <div class="max-w-[90rem] mx-auto mt-8 px-[10%]">
+            <h2 class="text-white font-bold text-3xl">The Executive Team</h2>
+            <p class="text-[#cacdd3] leading-6 mt-2 mb-12">There's nothing I really wanted to do in life that I wasn't able to get good at. That's my skill.</p>
+
+            <!-- Team Cards -->
+            <div>
+                <section class="grid grid-cols-[repeat(autofit,min(300px,1fr))] sm:grid-cols-2 gap-6">
+                    <div class="bg-white rounded-2xl shadow-xl flex sm:flex-col lg:flex-row items-center p-4 gap-6">
+                        <img src="./images/team1.png" class="rounded-lg w-28 md:w-[10rem]">
+                        <div>
+                            <h5 class="text-gray-750 font-semibold text-xl">Ash Roberts</h5>
+                            <h6 class="text-[#17C1E8] font-semibold">UI Designer</h6>
+                            <p class="text-slate-500 leading-6">Lorem ipsum dolor sit, amet consectetur elit consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-xl flex sm:flex-col lg:flex-row items-center p-4 gap-6">
+                        <img src="./images/team2.png" class="rounded-lg w-28 md:w-[10rem]">
+                        <div>
+                            <h5 class="text-gray-750 font-semibold text-xl">Ash Roberts</h5>
+                            <h6 class="text-[#17C1E8] font-semibold">Developer</h6>
+                            <p class="text-slate-500 leading-6">Lorem ipsum dolor sit, amet consectetur elit consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-xl flex sm:flex-col lg:flex-row items-center p-4 gap-6">
+                        <img src="./images/team3.png" class="rounded-lg w-28 md:w-[10rem]">
+                        <div>
+                            <h5 class="text-gray-750 font-semibold text-xl">Ash Roberts</h5>
+                            <h6 class="text-[#17C1E8] font-semibold">Js Developer</h6>
+                            <p class="text-slate-500 leading-6">Lorem ipsum dolor sit, amet consectetur elit consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-xl flex sm:flex-col lg:flex-row items-center p-4 gap-6">
+                        <img src="./images/team4.png" class="rounded-lg w-28 md:w-[10rem]">
+                        <div>
+                            <h5 class="text-gray-750 font-semibold text-xl">Ash Roberts</h5>
+                            <h6 class="text-[#17C1E8] font-semibold">Designer</h6>
+                            <p class="text-slate-500 leading-6">Lorem ipsum dolor sit, amet consectetur elit consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <img class="w-full absolute bottom-[0] md:-bottom-10 -z-10" src="./images/wave-btm.png">
+    </section>
+    
+    <!-- SECTION 4 - Brands & Projects -->
+    <section id="brands" class="scroll-mt-24 bg-[#f8f9fa] px-[10%]">
+        <!-- LOGOS -->
+        <div class="mx-auto max-w-6xl flex flex-wrap gap-8 items-center justify-between pt-12">
+            <img src="./images/logo1.png">
+            <img src="./images/logo2.png">
+            <img src="./images/logo3.png">
+            <img src="./images/logo4.png">
+            <img src="./images/logo5.png">
+            <img src="./images/logo6.png">
+        </div>
+
+        <div class="mt-28 pb-20 max-w-4xl mx-auto flex flex-col md:flex-row justify-center items-center gap-12">
+            <div class="text-center max-w-[280px]">
+                <h3 class="font-bold my-2 text-5xl bg-gradient-to-b from-[#21D4FD] from-[8.13%] to-[#2152FF] to-[74.24%] bg-clip-text transparent-text">5,234</h3>
+                <h5 class="font-semibold text-xl text-gray-750">Projects</h5>
+                <p class="text-slate-500 leading-6">Of "high-performing" level are led by a certified project manager</p>
+            </div>
+            <div class="text-center max-w-[280px]">
+                <h3 class="font-bold my-2 text-5xl bg-gradient-to-b from-[#21D4FD] from-[8.13%] to-[#2152FF] to-[74.24%] bg-clip-text transparent-text">3,400+</h3>
+                <h5 class="font-semibold text-xl text-gray-750">Hours</h5>
+                <p class="text-slate-500 leading-6">That meets quality standards required by our users</p>
+            </div>
+            <div class="text-center max-w-[280px]">
+                <h3 class="font-bold my-2 text-5xl bg-gradient-to-b from-[#21D4FD] from-[8.13%] to-[#2152FF] to-[74.24%] bg-clip-text transparent-text">24/7</h3>
+                <h5 class="font-semibold text-xl text-gray-750">Support</h5>
+                <p class="text-slate-500 leading-6">Actively engage team members that finishes on time</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5 - Contact -->
+    <section id="contact" class="scroll-mt-24 max-w-7xl mx-auto mt-20 flex flex-col lg:flex-row items-center justify-between px-[10%]">
+        <div>
+            <h2 class="text-gray-750 text-2xl font-semibold">Be the first to see the news</h2>
+            <p class="text-slate-500 leading-6 mt-3 mb-6">Your company may not be in the software business, but eventually, a software company will be in your business.</p>
+            <input type="text" placeholder="Email Here..." class="placeholder:text-slate-500 px-3 py-2 rounded-lg border border-solid border-[#D2D6DA] me-3">
+            <button class="px-6 py-3 uppercase text-white text-xs font-bold bg-gradient-to-br from-[#21D4FD] to-[#2152FF] rounded-lg shadow-lg mt-3 sm:mt-0">Subscribe</button>
+        </div>
+        <img src="./images/illustration.png" class="lg:max-w-sm">
+    </section>
+
+    <!-- Divider -->
+    <div class="max-w-7xl mt-16 mb-12 h-[1px] mx-auto bg-gradient-to-l from-white from-[2%] via-[#a8a8a8] via-50% to-white to-[98%]"></div>
+    
+    <!-- FOOTER -->
+    <footer class="max-w-7xl mx-auto px-[10%]">
+        <section class="flex flex-wrap gap-8 justify-between">
+            <div class="w-full sm:w-auto">
+                <h2 class="bg-gradient-to-br from-[#FF0080] from-0% to-[#7928CA] to-100% bg-clip-text transparent-text font-bold text-lg">Soft UI</h2>
+                <p class="font-semibold mt-3 mb-2 text-gray-750">Social</p>
+                <div class="flex gap-5">
+                    <img src="./images/facebook.png">
+                    <img src="./images/twitter.png">
+                    <img src="./images/dribble.png">
+                    <img src="./images/github.png">
+                    <img src="./images/youtube.png">
+                </div>
+            </div>
+            <div>
+                <h4 class="bg-gradient-to-br from-[#FF0080] from-0% to-[#7928CA] to-100% bg-clip-text transparent-text font-semibold">Company</h4>
+                <a class="my-1 block text-sm text-gray-750">About Us</a>
+                <a class="my-1 block text-sm text-gray-750">Freebies</a>
+                <a class="my-1 block text-sm text-gray-750">Premium Tools</a>
+                <a class="my-1 block text-sm text-gray-750">Blog</a>
+            </div>
+            <div>
+                <h4 class="bg-gradient-to-br from-[#FF0080] from-0% to-[#7928CA] to-100% bg-clip-text transparent-text font-semibold">Resources</h4>
+                <a class="my-1 block text-sm text-gray-750">Illustrations</a>
+                <a class="my-1 block text-sm text-gray-750">Bits & Snippets</a>
+                <a class="my-1 block text-sm text-gray-750">Affiliate Program</a>
+            </div>
+            <div>
+                <h4 class="bg-gradient-to-br from-[#FF0080] from-0% to-[#7928CA] to-100% bg-clip-text transparent-text font-semibold">Help & Support</h4>
+                <a class="my-1 block text-sm text-gray-750">Contact Us</a>
+                <a class="my-1 block text-sm text-gray-750">Knowledge Center</a>
+                <a class="my-1 block text-sm text-gray-750">Custom Development</a>
+                <a class="my-1 block text-sm text-gray-750">Sponsorships</a>
+            </div>
+            <div>
+                <h4 class="bg-gradient-to-br from-[#FF0080] from-0% to-[#7928CA] to-100% bg-clip-text transparent-text font-semibold">Legal</h4>
+                <a class="my-1 block text-sm text-gray-750">Terms & Conditions</a>
+                <a class="my-1 block text-sm text-gray-750">Privacy Policy</a>
+                <a class="my-1 block text-sm text-gray-750">Licenses</a>
+            </div>
+        </section>
+        <div  class="text-xs text-slate-500 mt-14 mb-3 text-center">
+            © <span id="cp-year"></span> Soft UI Design System by
+            <span class="font-semibold text-black">Creative Tim</span>
+
+            <!-- Divider -->
+            <div class="m-2 max-w-7xl h-[1px] mx-auto bg-gradient-to-l from-white from-[2%] via-[#a8a8a8] via-50% to-white to-[98%]"></div>
+    
+            <strong class="font-semibold">Developed By 
+                <a href="https://github.com/Noha-5/TailwindCss-Practice" title="github code"><span class="text-black">Noha Hamed</span></a>
+            </strong>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('cp-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
